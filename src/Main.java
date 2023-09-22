@@ -1,9 +1,18 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        String color;
-        System.out.println(color);
-        color = "Rojo";
+        Scanner alto = new Scanner(System.in);
+        System.out.println("Escribe el primero numero =");
+        int a = Integer.parseInt(alto.nextLine());
+        Scanner ancho = new Scanner(System.in);
+        System.out.println("escribe el segundon numero = ");
+        int b = Integer.parseInt((ancho.nextLine()));
+        if (a>b) {
+            System.out.println("El primero numero es mayor que el segundo");
+        } else{
+            System.out.println("el segundo numero es mayor que el primero");
+        }
     }
 }
