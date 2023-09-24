@@ -2,8 +2,24 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        String color;
-        System.out.println(color);
-        color = "Rojo";
+        var numero = 2;
+        var numeroTexto = "Valor desconocido";
+        switch (numero) {
+            case 1:
+                numeroTexto = "Numero uno";
+                break;
+            case 2:
+                numeroTexto = "numero dos";
+                break;
+            case 3:
+                numeroTexto = "Numero tres";
+                break;
+            case 4:
+                numeroTexto = "Numero cuatro";
+                break;
+            default:
+                numeroTexto = "Caso no encontrado";
+        }
+        System.out.println("numeroTexto = " + numeroTexto);
     }
 }
