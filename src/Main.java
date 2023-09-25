@@ -2,8 +2,8 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        String color;
-        System.out.println(color);
-        color = "Rojo";
+        for (var counter = 0; counter < 3; counter++) {
+            System.out.println("counter = " + counter);
+        }
     }
 }
